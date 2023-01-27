@@ -6,7 +6,7 @@
         {
             Console.WriteLine("WelCome to Logical Programs");
             Console.WriteLine("Choose any one program from below option: ");
-            Console.WriteLine("1:Harmonic Series \n 2:Perfect Nmuber \n 3:Prime Number");
+            Console.WriteLine("1:Harmonic Series \n 2:Perfect Nmuber \n 3:Prime Number \n4.Reverse Number");
             int Options=Convert.ToInt32(Console.ReadLine());
             switch (Options)
             {
@@ -18,6 +18,9 @@
                     break;
                 case 3:
                     PrimeNumber.PrimeNumberDisplay();
+                    break;
+                case 4:
+                    ReverseNumber.ReverseNumberDisplay();
                     break;
                 default:
                     Console.WriteLine("Enter option within given range");
