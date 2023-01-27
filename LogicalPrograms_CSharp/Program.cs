@@ -5,19 +5,17 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("WelCome to Logical Programs");
-            Console.WriteLine("Enter the number ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            int n1 = 0, n2 = 1, n3;
-            Console.WriteLine("Harmoni series :- {0}", n1);
-            Console.WriteLine("Harmoni series :- {0}", n2);
-            for (int i=0;i<=num;i++)
+            Console.WriteLine("Choose any one program from below option: ");
+            Console.WriteLine("1:Harmonic Series \n 2:Perfect Nmuber");
+            int Options=Convert.ToInt32(Console.ReadLine());
+            switch (Options)
             {
-                n3 = n1 + n2;
-                n1 = n2;
-                n2 = n3;
-
-             
-                Console.WriteLine("Harmoni series :- {0}",n3);
+                case 1:
+                    HarmonicSeries.HarmonicSeriesDisplay();
+                    break;
+                case 2:
+                    PerfectNumber.PerfectNumberDisplay();
+                    break;
             }
         }
     }
